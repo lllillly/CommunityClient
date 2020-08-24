@@ -1,0 +1,22 @@
+.Header {
+  width: 100%;
+  height: 80px;
+  background: #222f3e;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header svg {
+  font-size: 44px;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.Header svg:hover {
+  color: #ff9f43;
+}
