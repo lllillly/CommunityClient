@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { C_Btn, D_Btn } from "../commonComponents";
+import axios from "axios";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -100,7 +101,7 @@ class Write extends React.Component {
     this.setState(nextState);
   };
 
-  _writeHandler = () => {
+  _writeHandler = async () => {
     const { title, author, description } = this.state;
 
     if (!title || title.trim() === "") {
@@ -124,7 +125,8 @@ class Write extends React.Component {
       description: description,
       type: this.props.match.params.boardType,
     };
-    console.log(inputData);
+
+    await axios.post("/api/writeBoard");
   };
 }
 
