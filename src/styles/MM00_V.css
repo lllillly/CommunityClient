@@ -11,7 +11,7 @@
 .MM00_V .MM00_V__title {
   font-size: 44px;
   margin-bottom: 10px;
-  color: rgb(70, 70, 70);
+  color: rgb(65, 57, 57);
   margin-bottom: 20px;
 }
 
@@ -36,6 +36,6 @@
 }
 
 .MM00_V .MM00_V__menuBox .MM00_V__menuBox__menu:hover {
-  background: linear-gradient(#f2994a, #f2c94c);
+  background: linear-gradient(#65cc9c, #a3c74e);
   color: #fff;
 }
